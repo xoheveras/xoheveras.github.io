@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles/enterhouse.css">
+	<link rel="stylesheet" type="text/css" href="styles/buyhouse.css">
+	<link rel="stylesheet" type="text/css" href="styles/admins.css">
+	<link rel="stylesheet" type="text/css" href="styles/WorkFillinghouse.css">
+	<link rel="stylesheet" type="text/css" href="styles/HUD.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="function.js"></script>
+	<title>Launcher</title>
+</head>
+<body>
+	<content id="HUD" class="HUD">
+		<div id="alerts__" class="Alerts">
+		</div>
+	</content>
+	<content id="dialog" class="blackscreen_buyhouse">
+		<!-- Покупка дома -->
+		<div id="IDbuyhouse" class="globalbox_buyhouse">
+				<div class="labelbox_buyhouse">Риелтороское агенстов Haunt</div>
+					<div class="information_buyhouse">
+						<div class="HouseInfo_buyhouse">
+							<p style="margin-bottom:5px">Информация о доме</p><hr style="margin-bottom:15px">
+							<img src="image/home.png" id="BuyHouseID" style="margin-bottom:5px"> Номер дома: 15</img><br>
+							<p id="BuyHouseAdress" style="margin-bottom:15px">Адрес: LS Santa-Monica</p><hr style="margin-bottom:15px">
+							<p id="BuyHouseClass" style="margin-bottom:5px">Класс: Средний</p>
+							<p id="BuyHouseCountCar" style="margin-bottom:15px"> Мест в гараже: 2</p>
+						</div>
+						<img src="image/house1.png">
+					</div>
+				<div class="buttonbox_buyhouse"><!-- 
+				--><div onclick="BuyHouseClick(this)" class="buy_buyhouse"><p>Приобрести<p></div><!-- 
+				--><div onclick="onExitClick(this)" class="exit_buyhouse"><p>Закрыть</p></div></div>
+		<div id="clears" class="clears">
+			<div style="display: none;" class="s">Информация о доме</div><div class="s"></div>
+			<div class="s"><!-- 
+			--><button style="display: none;" class="s">Войти</button><!-- 
+			--><button style="display: none;"class="s">Закрыть</button>
+			</div></div> <!-- Вход в дом --></div>
+		<!-- Войти в дом -->
+		<div id="IDenterhouse" class="globalbox_enterhouse">
+			<div class="labelbox_enterhouse">Информация о доме</div>
+			<div class="information_enterhouse">
+				<div class="HouseInfo_enterhouse">
+					<p style="margin-bottom:5px">Информация о доме</p><hr style="margin-bottom:15px">
+					<img src="image/home.png" id="EnterHouseID" style="margin-bottom:5px"> Номер дома: 15</img><br>
+					<p id="EnterHouseAdress" style="margin-bottom:15px"> Адрес: LS Santa-Monica</p><hr style="margin-bottom:15px">
+					<p id="EnterHouseOwner" style="margin-bottom:5px">   Владелец: Egor_Udovin</p>
+					<p id="EnterHouseDoor" style="margin-bottom:15px"> Дверь: Открыта</p>
+				</div>
+				<img src="image/house1.png">
+			</div>
+			<div class="buttonbox_enterhouse"><!-- 
+			--><div onclick="EnterHouseClick(this)" class="buy_enterhouse"><p>Войти</p></div><!-- 
+			--><div onclick="onExitClick(this)" class="exit_enterhouse"><p>Закрыть</p></div>
+			</div></div> 
+		<!-- Админ авторизация -->
+		<div id="IDAdminLogin" class="globalbox_admins">
+			<div class="labelbox_admins">Админ авторизация <img class="adminclose" onclick="onExitClick(this)" src="image/close.png"></div>
+			<div class="information_admins">Добро пожаловать блюститель порядка и справедливости, я предлагаю тебе прямо сейчас авторизироваться и принять власть в свои руки. Да прибудет справедливость... А еще скриптер любит пони</div>
+			<textarea id="inputApass" class="inputpassword"></textarea>
+			<div onclick="CheckAdminPass(this)" class="sendadminpass"><p>Войти</p></div>
+		<div id="clears" class="clears">
+			<div style="display: none;" class="s">Информация о доме</div><div class="s"></div>
+			<div class="s"><!-- 
+			--><button style="display: none;" class="s">Войти</button><!-- 
+			--><button style="display: none;"class="s">Закрыть</button>
+		</div></div> <!-- Вход в дом --></div>
+		<!-- Работа развозчика мебели в офисе авторизация -->
+		<div id="IDWorkFillingHouse" class="globalbox_WorkFillingHouse">
+			<div class="header_WorkFillingHouse">
+				<div class="text_WorkFillingHouse">
+					<h1>Работа развозчик мебели</h1>
+					<h3>Для начала работы выбирете задание<br>из предложеных вариантов</h3>
+				</div>
+				<div class="boxmenu_WorkFillingHouse">
+					<a id="Zakaz">Заказы</a>
+					<a id='info'>Информация</a>
+				</div>
+				<img src="image/close.png">
+			</div>
+			<div class="content_WorkFillingHouse">
+				<div class="item_WorkFillingHouse">
+					<p>Доставьте мебель в дом # 1 </p>
+					<div class="itembuttons_WorkFillingHouse">Выполнить</div>
+				</div>
+				<div class="item_WorkFillingHouse">
+					<p>Доставьте мебель в дом # 1 </p>
+					<div class="itembuttons_WorkFillingHouse">Выполнить</div>
+				</div>
+				<div class="item_WorkFillingHouse">
+					<p>Доставьте мебель в дом # 1 </p>
+					<div class="itembuttons_WorkFillingHouse">Выполнить</div>
+				</div>
+				<div class="item_WorkFillingHouse">
+					<p>Доставьте мебель в дом # 1 </p>
+					<div class="itembuttons_WorkFillingHouse">Выполнить</div>
+				</div>
+				<div class="item_WorkFillingHouse">
+					<p>Доставьте мебель в дом # 1 </p>
+					<div class="itembuttons_WorkFillingHouse">Выполнить</div>
+				</div>
+				<div class="item_WorkFillingHouse">
+					<p>Доставьте мебель в дом # 1 </p>
+					<div class="itembuttons_WorkFillingHouse">Выполнить</div>
+				</div>
+			</div>
+		</div>
+	</content>
+</body>
+<script type="text/javascript">
+	// Сокрытие
+	document.querySelector('#dialog').classList.add('hidenttrue'); // Все диалоги + затемнение
+	document.querySelector('#IDbuyhouse').classList.add('hidenttrue'); // Скрыть покупку дома
+	document.querySelector('#IDenterhouse').classList.add('hidenttrue'); // Скрыть вход в дом
+	document.querySelector('#IDAdminLogin').classList.add('hidenttrue'); // Алогин
+	document.querySelector('#IDWorkFillingHouse').classList.add('hidenttrue'); // Меню развозчика мебели
+</script>
+<script type="text/javascript">
+
+	/////////////////////Вход в дом///////////////////////////
+	let house_number = document.getElementById('EnterHouseID');
+	let house_adress = document.getElementById('EnterHouseAdress');
+	let house_owner = document.getElementById('EnterHouseOwner');
+	let house_door = document.getElementById('EnterHouseDoor');
+
+	cef.on("EnterHouse:data", (hID, hAdress, hOwner, hlock) => {
+			house_number.innerHTML = 'Номер дома: гей'+hID;
+			house_adress.innerHTML = 'Адресс: '+hAdress;
+			house_owner.innerHTML = 'Владелец: '+hOwner;
+			if(hlock == 0)
+			{
+				house_door.innerHTML = 'Дверь: Открыта';
+			}
+			else
+			{
+				house_door.innerHTML = 'Дверь: Закрыта';
+			}
+			document.querySelector('#dialog').classList.remove('hidenttrue');
+			document.querySelector('#IDenterhouse').classList.remove('hidenttrue');
+		});
+
+	/////////////////////////Покупка дома////////////////////////////////
+
+	let house_numberbuy = document.getElementById('BuyHouseID');
+	let house_adressbuy = document.getElementById('BuyHouseAdress');
+	let house_class = document.getElementById('BuyHouseClass');
+	let house_car = document.getElementById('BuyHouseCountCar');
+
+	cef.on("BuyHouse:data", (houseid,houseadress,housetype) => {
+		house_numberbuy.innerHTML = 'Номер дома: '+houseid;
+		house_adressbuy.innerHTML = 'Адрес: '+houseadress;
+		house_class.innerHTML = 'Класс: '+housetype;
+		house_car.innerHTML = 'Парковочных мест: '+housetype;
+
+		document.querySelector('#dialog').classList.remove('hidenttrue');
+		document.querySelector('#IDbuyhouse').classList.remove('hidenttrue');
+
+	});
+	/////////////////////////Уведомление////////////////////////////////
+	cef.on("Notification:data", (type,text) => {
+		GetAlert(type,text);
+	});
+</script>
+</html>

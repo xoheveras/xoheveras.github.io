@@ -1,0 +1,49 @@
+.hud{
+}
+
+.PlayerHUD{
+	float: left;
+	height: 100%;
+	width: 50%;
+}
+
+.Alerts{
+	float: left;
+	height: 100px;
+	width: 50%;
+
+	padding-left: 95px;
+	padding-top: 500px;
+}
+
+.InfoAlert{
+	width: 238px;
+	height: auto;
+
+	background: rgba(29, 29, 29, 0.8);
+}
+
+.InfoAlert p{
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+.InfoAlert{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+
+	margin-bottom: 25px;
+	position:relative;
+}
+
+.InfoAlert img{
+	position: absolute;
+	top: -30px;
+	left:  -30px;
+
+}

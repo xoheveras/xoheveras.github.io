@@ -1,0 +1,154 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	background-color: #19181F;
+	overflow: hidden;
+}
+
+#Button-Trolle
+{
+	opacity: 0;
+	background-color: #727DE2;
+	width: 100%;
+	height: 100vh;
+
+}
+
+#Button-Trolle-test
+{
+	opacity: 0;
+	margin-top: 10px;
+	background: transparent;
+
+	width: 150px;
+	height: 50px;
+
+	border: 2px solid #FFFFFF;
+	box-sizing: border-box;
+
+	cursor: pointer;
+
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 29px;
+
+	color: #FFFFFF;
+
+	transition: 0.02s linear;
+
+}
+
+#Button-Trolle-test:hover
+{
+	background: white;
+	color: gray;
+}
+
+.button-left
+{
+	margin-left: -13%;
+}
+
+.button-right
+{
+	margin-left: 13%;
+}
+
+#first-text
+{
+	opacity: 0;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+
+	color: #FFFFFF;
+}
+
+.text-box-troll
+{
+	padding-top: 20%;
+}
+
+#sub-text
+{
+	opacity: 0;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	/* identical to box height */
+
+
+	color: #FFFFFF;
+}
+
+
+.line-one-box
+{
+	width: 90%;
+	padding-top: 12%;
+	padding-left: 37%;
+	overflow: hidden;
+}
+
+.loading-box
+{
+	margin-top: 10px;
+	width: 495px;
+	height: 31px;
+
+	background: #C4C4C4;
+	border-radius: 10px;
+}
+
+.line-one
+{
+	width: 0%;
+	height: 31px;
+	left: 537px;
+	top: 524px;
+
+	background: #727DE2;
+	border-radius: 10px;
+}
+
+.line-two
+{
+	width: 0%;
+	height: 31px;
+
+	margin-top: 10%;
+
+	background: #727DE2;
+	border-radius: 10px;
+}
+
+
+.load
+{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+
+	color: #FFFFFF;
+}
+
+@media screen and (max-width : 1024px) 
+{
+}
+@media screen and (max-width : 800px) {
+
+}
+@media screen and (max-width : 420px) {
+}

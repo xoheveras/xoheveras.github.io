@@ -6,6 +6,7 @@
 body
 {
 	display: flex;
+	background-color: #19181F;
 }
 
 #contact #skills #about #projects
@@ -215,4 +216,28 @@ h3
 }
 .new-string {
   width: 100%;
+}
+
+@media screen and (min-width : 426 max-width : 1024px) 
+{
+	.last-block
+	{
+		position: relative;
+		border-bottom: 10px solid #727DE2;
+	}
+}
+@media screen and (max-width : 426px) 
+{
+
+	body
+	{
+		display: block;
+	}
+
+	.last-block
+	{
+		border-top: 10px solid #727DE2;
+		margin-top: 50px;
+		position: relative;
+	}
 }

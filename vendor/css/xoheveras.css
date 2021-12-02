@@ -5,150 +5,214 @@
 
 body
 {
-	background-color: #19181F;
-	overflow: hidden;
+	display: flex;
 }
 
-#Button-Trolle
+#contact #skills #about #projects
 {
 	opacity: 0;
-	background-color: #727DE2;
-	width: 100%;
+}
+
+.project
+{
+	margin-top: 50px;
+}
+
+.first-block
+{
+	width: 80%;
 	height: 100vh;
-
+	background-color: #19181F;
 }
 
-#Button-Trolle-test
+.img-box
 {
-	opacity: 0;
-	margin-top: 10px;
-	background: transparent;
+	width: 100%;
+	height: 50vh;
+  	background-image: url("../pic.png");
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	background-size:100% 100%;
+}
 
-	width: 150px;
-	height: 50px;
+.comment
+{
+	width: 100%;
+	height: 50%;
+}
 
-	border: 2px solid #FFFFFF;
+.last-block
+{
+	position: fixed;
+
+	left: auto;
+	right: 0;
+
+	width: 40%;
+	height: 100vh;
+	background-color: #19181F;
+	border-left: 10px solid #727DE2;
 	box-sizing: border-box;
-
-	cursor: pointer;
-
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 20px;
-	line-height: 29px;
-
-	color: #FFFFFF;
-
-	transition: 0.02s linear;
-
 }
 
-#Button-Trolle-test:hover
+h1
 {
-	background: white;
-	color: gray;
-}
-
-.button-left
-{
-	margin-left: -13%;
-}
-
-.button-right
-{
-	margin-left: 13%;
-}
-
-#first-text
-{
-	opacity: 0;
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 29px;
 
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+	margin-left: 25px;
+
 	color: #FFFFFF;
 }
 
-.text-box-troll
+h3
 {
-	padding-top: 20%;
-}
+	margin-left: 25px;
 
-#sub-text
-{
-	opacity: 0;
 	font-family: Montserrat;
 	font-style: normal;
-	font-weight: bold;
-	font-size: 14px;
-	line-height: 17px;
-	/* identical to box height */
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
 
+	color: #FFFFFF;
+}
+
+.skill
+{
+	display: flex;
+
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 22px;
+
+	margin-left: 25px;
+
+	margin-bottom: 5px;
 
 	color: #FFFFFF;
 }
 
 
-.line-one-box
+.front-progress
 {
-	width: 90%;
-	padding-top: 12%;
-	padding-left: 37%;
-	overflow: hidden;
+
+	position: absolute;
+	height: 10px;
+
+	background: #727DE2;
+	border-radius: 5px;
 }
 
-.loading-box
+.back-progress
 {
-	margin-top: 10px;
-	width: 495px;
-	height: 31px;
+
+	margin-top: 6px;
+	margin-left: 5px;
+
+	width: 268px;
+	height: 10px;
 
 	background: #C4C4C4;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 
-.line-one
+.block
 {
-	width: 0%;
-	height: 31px;
-	left: 537px;
-	top: 524px;
+	position:absolute;
 
-	background: #727DE2;
-	border-radius: 10px;
+	left:0;
+	bottom:0;
+	right:0;
+
+	width: auto;
+	height: 110px;
+
+	background-color: #727DE2;
+
+	text-align: left;
+
+	display: none;
 }
 
-.line-two
+.block .Gtext
 {
-	width: 0%;
-	height: 31px;
 
-	margin-top: 10%;
+	margin-top: 5px;
+	margin-left: 5px;
 
-	background: #727DE2;
-	border-radius: 10px;
-}
-
-
-.load
-{
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 24px;
-	line-height: 29px;
+	font-size: 17px;
+	line-height: 22px;
 
 	color: #FFFFFF;
 }
 
-@media screen and (max-width : 1024px) 
+.block a
 {
+	text-decoration: none;
+	color: white;
 }
-@media screen and (max-width : 800px) {
 
+.block .Stext
+{
+
+	margin-top: 5px;
+	margin-left: 5px;
+
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 22px;
+
+	color: #FFFFFF;
 }
-@media screen and (max-width : 420px) {
+
+.project-box
+{
+	position:relative;
+
+	width: 349px;
+	height: 115px;
+
+	border: 3px solid #727DE2;
+	box-sizing: border-box;
+
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 110px;
+
+	text-align: center;
+
+	color: #FFFFFF;
+
+	margin-left: 15px;
+	margin-top: 15px;
+}
+
+.project-box:hover .block{
+    display:block;
+}
+
+.projects
+{
+	display: flex;
+	flex-wrap: wrap;
+	height: auto;
+}
+.new-string {
+  width: 100%;
 }

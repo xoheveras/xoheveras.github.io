@@ -234,10 +234,21 @@ h3
 		display: block;
 	}
 
+	.project-box
+	{
+		margin-left: 60px;
+	}
+
+	h1
+	{
+		margin-left: 60px;
+	}
+
 	.last-block
 	{
 		border-top: 10px solid #727DE2;
 		margin-top: 50px;
+		width: 100%;
 		position: relative;
 	}
 }
